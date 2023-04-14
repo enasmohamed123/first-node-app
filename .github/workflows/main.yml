@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github actions'
-        run: pwd
+      - name: 'printing folder content'
+        run: ls
 
-      - name: 'Testing Github actions'
-        run: echo ahmed
+
+
+
+      
