@@ -12,13 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'before folder content'
-        run: ls
+      - uses: actions/checkout@v3   
 
-      - uses: actions/checkout@v3  
+      - name: docker login --username enas30202021702044mohamedosman --password dckr_pat_gY4qdSw0nuuZga2NF-K2yY1xmi0
 
-      - name: 'after folder content'
-        run: ls
+
 
 
 
