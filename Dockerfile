@@ -1,5 +1,7 @@
-from openjdk
-workdir /application
-copy Test1.java .
-run javac Test1.java
-cmd java Test1
+ FROM node:14-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]
